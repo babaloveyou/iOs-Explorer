@@ -1,0 +1,393 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ios_explorer.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ios_explorer.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 iOs Explorer"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "iOs文件浏览器  0.8 Beta",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 4leaf.me @ 2009",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_IOS_EXPLORER_DIALOG DIALOGEX 0, 0, 449, 300
+STYLE DS_SETFONT | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "iOs文件浏览器"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_DISABLEDRAGDROP | WS_TABSTOP,0,0,140,286,WS_EX_CLIENTEDGE
+    CONTROL         "",IDC_FILELIST,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,140,14,309,170,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_STATUS,0,286,368,14,ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "常用路径",IDC_FAV,404,0,45,14
+    EDITTEXT        IDC_PATH,170,0,218,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "藏",IDC_GO,389,0,14,14
+    CONTROL         "",IDC_PROGRESS1,"msctls_progress32",WS_BORDER,369,285,80,14
+    PUSHBUTTON      "<",IDC_BACKWARD,140,0,14,14
+    PUSHBUTTON      ">",IDC_FORWARD,156,0,14,14
+    CONTROL         "",IDC_EXPLORER1,"{8856F961-340A-11D0-A96B-00C04FD705A2}",WS_TABSTOP,140,185,309,101
+    CONTROL         "",IDC_YSPLITTER,"Static",SS_GRAYFRAME,140,184,309,1
+END
+
+IDD_RENAMEDIALO DIALOGEX 0, 0, 124, 47
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "重命名"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,26,50,14
+    PUSHBUTTON      "取消",IDCANCEL,67,26,50,14
+    EDITTEXT        IDC_EDIT,7,7,110,14,ES_AUTOHSCROLL
+END
+
+IDD_ADDFAV_DIALOG DIALOGEX 0, 0, 117, 67
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "加入收藏夹"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,22,46,30,14
+    PUSHBUTTON      "取消",IDCANCEL,63,46,30,14
+    EDITTEXT        IDC_ADDFAV_NAME,30,7,80,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDFAV_ADDRESS,30,26,80,14,ES_AUTOHSCROLL
+    LTEXT           "名称",IDC_STATIC,7,9,17,8
+    LTEXT           "地址",IDC_STATIC,7,28,17,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "iOs Explorer"
+            VALUE "LegalCopyright", "http://4leaf.me, 保留所有权利"
+            VALUE "OriginalFilename", "iOs Explorer"
+            VALUE "ProductName", "iOs文件浏览器"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_RENAMEDIALO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_ADDFAV_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 110
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_IOS_DEVICE              BITMAP                  "res\\ios.bmp"
+IDB_FOLDER              BITMAP                  "res\\folder.bmp"
+IDB_OPENED_FOLDER         BITMAP                  "res\\opened_folder.bmp"
+IDB_SYMBOL_LINK          BITMAP                  "res\\symbol_link.bmp"
+IDB_OPENED_SYMBOL_LINK     BITMAP                  "res\\opened_symbol_link.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_FILELIST_MENU MENU 
+BEGIN
+    POPUP "emptyMenu"
+    BEGIN
+        MENUITEM "新建文件夹(&N)",                   ID_NEW
+        MENUITEM "粘贴(&P)",                      ID_PASTE
+    END
+    POPUP "itemMenu"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM "打开方式",                        ID_OPEN_WITH
+        MENUITEM SEPARATOR
+        MENUITEM "复制路径",                        ID_COPYPATH
+        MENUITEM "复制到(&C)...",                  ID_COPYTO
+        MENUITEM SEPARATOR
+        MENUITEM "新建文件夹(&N)",                   ID_NEW
+        MENUITEM "删除(&D)",                      ID_DEL
+        MENUITEM "重命名(&R)",                     ID_RENAME
+    END
+    POPUP "itemsMenu"
+    BEGIN
+        MENUITEM "复制到(&C)...",                  ID_COPYALLTO
+        MENUITEM SEPARATOR
+        MENUITEM "新建文件夹(&N)",                   ID_NEW
+        MENUITEM "删除(&D)",                      ID_DELALL
+        MENUITEM "粘贴(&P)",                      ID_PASTE
+    END
+END
+
+IDR_FAV_MENU MENU 
+BEGIN
+    POPUP "fav"
+    BEGIN
+        POPUP "声音"
+        BEGIN
+            MENUITEM "铃声",                          ID_RINGTONE
+            MENUITEM "界面声音",                        ID_UISound
+            MENUITEM "第三方铃声",                       ID_THRIDRINGTONE
+        END
+        POPUP "主题"
+        BEGIN
+            MENUITEM "字体",                          ID_FONT
+            MENUITEM "墙纸",                          ID_WALLPAPER
+            MENUITEM "SpringBoard",                 ID_SPRING
+            MENUITEM "WinterBoard",                 ID_WINTER
+            MENUITEM "SummerBoard",                 ID_SUMMER
+        END
+        POPUP "程序"
+        BEGIN
+            MENUITEM "进程",                          ID_PROCESS
+            MENUITEM "PXL安装记录",                     ID_PXL
+            MENUITEM "汉化文件",                        ID_HANZIFY
+            MENUITEM "错误报告",                        ID_CRASHREPORT
+        END
+        POPUP "电话"
+        BEGIN
+            MENUITEM "短信",                          ID_SMS
+            MENUITEM "电话本",                         ID_ADDBOOK
+        END
+        POPUP "媒体"
+        BEGIN
+            MENUITEM "音乐",                          ID_MUSIC
+            MENUITEM "Podcast",                     ID_PODCAST
+            MENUITEM "照片",                          ID_PHOTO
+            MENUITEM "摄像头",                         ID_CAM
+        END
+        POPUP "第三方"
+        BEGIN
+            MENUITEM "PDF",                         ID_PDF
+            MENUITEM "录音",                          ID_RECORD
+        END
+    END
+END
+
+IDR_FAVB_MENU MENU 
+BEGIN
+    POPUP "Favb"
+    BEGIN
+        MENUITEM "加入收藏夹...",                    ID_CUSTOM_MENU_MIN
+    END
+    POPUP "Del"
+    BEGIN
+        MENUITEM "全部删除",                        ID_CUSTOM_MENU_DEL_MIN
+    END
+END
+
+IDR_PREVIEW_MENU MENU 
+BEGIN
+    POPUP "preview"
+    BEGIN
+        POPUP "设置编码"
+        BEGIN
+            POPUP "Unicode"
+            BEGIN
+                MENUITEM "Unicode(UTF-8)",              ID_UTF8
+                MENUITEM "Unicode(UTF-16)",             ID_UTF16
+                MENUITEM "Unicode(UTF-32)",             ID_UTF32
+            END
+            POPUP "简体中文"
+            BEGIN
+                MENUITEM "简体中文(GB2312)",                ID_GB2312
+                MENUITEM "简体中文(GB18030)",               ID_GB18030
+                MENUITEM "简体中文(GBK)",                   ID_GBK
+                MENUITEM "简体中文(HZ)",                    ID_HZ
+            END
+            POPUP "繁体中文"
+            BEGIN
+                MENUITEM "繁体中文(Big5)",                  ID_BIG5
+                MENUITEM "繁体中文(Big5-HKSCS)",            ID_BIG5HK
+                MENUITEM "繁体中文(EUC-TW)",                ID_EUCTW
+                MENUITEM "繁体中文(ISO-2022-CN)",           ID_ISO2022CN
+            END
+            POPUP "西方"
+            BEGIN
+                MENUITEM "西方(ISO-8859-1)",              ID_ISO88591
+                MENUITEM "西方(MacRoman)",                ID_MACROMAN
+            END
+        END
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_IOS_EXPLORER_DIALOG DLGINIT
+BEGIN
+    IDC_EXPLORER1, 0x376, 160, 0
+0x0000, 0x0000, 0x004c, 0x0000, 0x2ff5, 0x0000, 0x0fb6, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x004c, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 
+0x0000, 0xd0e0, 0x0057, 0x3573, 0x11cf, 0x69ae, 0x0008, 0x2e2b, 0x6212, 
+0x0008, 0x0000, 0x0000, 0x0000, 0x004c, 0x0000, 0x1401, 0x0002, 0x0000, 
+0x0000, 0x00c0, 0x0000, 0x0000, 0x4600, 0x0080, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 iOs Explorer(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ios_explorer.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
