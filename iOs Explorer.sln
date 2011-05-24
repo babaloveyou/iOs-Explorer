@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iOs Explorer", "src\iOs Explorer\iOs Explorer.vcproj", "{A502A55A-B35C-4135-9E0D-4F06771F109D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iOsIO", "src\iOsIO\iOsIO.vcproj", "{F8DAAFD8-42C2-478D-94A8-DE176AF27196}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibMacPNGConv", "src\LibMacPNGConv\LibMacPNGConv.vcproj", "{056443FB-BD04-486F-9791-BFE885769A82}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LibPlistConv", "src\LibPlistConv\LibPlistConv.vcproj", "{4255A457-8228-454A-848D-D989931B710F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A502A55A-B35C-4135-9E0D-4F06771F109D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A502A55A-B35C-4135-9E0D-4F06771F109D}.Debug|Win32.Build.0 = Debug|Win32
+		{A502A55A-B35C-4135-9E0D-4F06771F109D}.Release|Win32.ActiveCfg = Release|Win32
+		{A502A55A-B35C-4135-9E0D-4F06771F109D}.Release|Win32.Build.0 = Release|Win32
+		{F8DAAFD8-42C2-478D-94A8-DE176AF27196}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F8DAAFD8-42C2-478D-94A8-DE176AF27196}.Debug|Win32.Build.0 = Debug|Win32
+		{F8DAAFD8-42C2-478D-94A8-DE176AF27196}.Release|Win32.ActiveCfg = Release|Win32
+		{F8DAAFD8-42C2-478D-94A8-DE176AF27196}.Release|Win32.Build.0 = Release|Win32
+		{056443FB-BD04-486F-9791-BFE885769A82}.Debug|Win32.ActiveCfg = Debug|Win32
+		{056443FB-BD04-486F-9791-BFE885769A82}.Debug|Win32.Build.0 = Debug|Win32
+		{056443FB-BD04-486F-9791-BFE885769A82}.Release|Win32.ActiveCfg = Release|Win32
+		{056443FB-BD04-486F-9791-BFE885769A82}.Release|Win32.Build.0 = Release|Win32
+		{4255A457-8228-454A-848D-D989931B710F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4255A457-8228-454A-848D-D989931B710F}.Debug|Win32.Build.0 = Debug|Win32
+		{4255A457-8228-454A-848D-D989931B710F}.Release|Win32.ActiveCfg = Release|Win32
+		{4255A457-8228-454A-848D-D989931B710F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
